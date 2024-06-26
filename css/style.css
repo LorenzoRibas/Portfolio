@@ -7,7 +7,7 @@ body, header {
 }
 
 .title-container {
-    margin-top: 300px;
+    margin-top: 100px;
     margin-left: 200px;
 }
 
@@ -35,9 +35,17 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+.lorenzo-img {
+    border-radius: 150px;
+}
+
+@media (max-width: 1300px) {
     .title-container {
         margin-left: 0;
         margin-top: 100px;
+    }
+    .lorenzo-img {
+        height: 700px;
+        width: auto
     }
 }
