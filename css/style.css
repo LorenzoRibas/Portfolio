@@ -49,3 +49,13 @@ a {
         width: auto
     }
 }
+
+/* Projetos */
+
+.projects-container {
+    height: 500px;
+}
+
+.projects-container .border {
+    min-height: 300px;
+}
