@@ -5,3 +5,39 @@ body, header {
 .dark-text {
     color: #36454F;
 }
+
+.title-container {
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid transparent;
+    animation: typing 6s steps(23)
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+i {
+    color:black;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .title-container {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
