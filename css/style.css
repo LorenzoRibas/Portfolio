@@ -1,10 +1,14 @@
-body, header {
+/* Padrão */
+
+body, header, .form-control {
     background-color: #D3D3D3;
 }
 
 .dark-text {
     color: #36454F;
 }
+
+/* Título */
 
 .title-container {
     margin-top: 100px;
@@ -80,3 +84,15 @@ a {
         margin-left: 50px;
     }
 }
+
+/* Contato */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
