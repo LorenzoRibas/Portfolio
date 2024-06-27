@@ -8,14 +8,13 @@ body, header {
 
 .title-container {
     margin-top: 100px;
-    margin-left: 200px;
 }
 
 .text {
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid transparent;
-    animation: typing 6s steps(23)
+    animation: typing 6s steps(23);
 }
 
 @keyframes typing {
@@ -28,7 +27,7 @@ body, header {
 }
 
 i {
-    color:black;
+    color: black;
 }
 
 a {
@@ -46,16 +45,38 @@ a {
     }
     .lorenzo-img {
         height: 700px;
-        width: auto
+        width: auto;
     }
 }
 
 /* Projetos */
-
 .projects-container {
-    height: 500px;
+    height: auto;
 }
 
 .projects-container .border {
     min-height: 300px;
+}
+
+/* Sobre mim */
+.about-container {
+    margin-top: 100px;
+}
+
+.project img {
+    width: 100%; 
+    height: auto;
+}
+
+.about-text {
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .projects-container .border {
+        min-height: auto;
+    }
+    .about-text {
+        margin-left: 50px;
+    }
 }
