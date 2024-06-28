@@ -1,4 +1,6 @@
-body, header {
+/* Padrão */
+
+body, header, .form-control {
     background-color: #D3D3D3;
 }
 
@@ -6,16 +8,17 @@ body, header {
     color: #36454F;
 }
 
+/* Título */
+
 .title-container {
-    margin-top: 300px;
-    margin-left: 200px;
+    margin-top: 100px;
 }
 
 .text {
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid transparent;
-    animation: typing 6s steps(23)
+    animation: typing 6s steps(23);
 }
 
 @keyframes typing {
@@ -28,18 +31,75 @@ body, header {
 }
 
 i {
-    color:black;
+    color: black;
 }
 
 a {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+.lorenzo-img {
+    border-radius: 150px;
+}
+
+@media (max-width: 1300px) {
     .title-container {
         margin-left: 0;
         margin-top: 100px;
     }
+    .lorenzo-img {
+        height: 700px;
+        width: auto;
+    }
 }
 
-/* teste */
+/* Projetos */
+.projects-container {
+    height: auto;
+}
+
+.projects-container .border {
+    min-height: 300px;
+}
+
+/* Sobre mim */
+.about-container {
+    margin-top: 100px;
+}
+
+.project img {
+    width: 100%; 
+    height: auto;
+}
+
+.about-text {
+    margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+    .projects-container .border {
+        min-height: auto;
+    }
+    .about-text {
+        margin-left: 50px;
+    }
+}
+
+/* Contato */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.footer .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer i {
+    margin: 0 10px;
+}
