@@ -1,161 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lorenzo Ribas</title>
-    <script src="https://kit.fontawesome.com/73c58b7ad8.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://kit.fontawesome.com/73c58b7ad8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand dark-text fs-4" href="">Lorenzo Ribas</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link dark-text fs-5" aria-current="page" href="#projects">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dark-text fs-5" href="#about">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dark-text fs-5" href="#contact">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-color fs-4" href="">Lorenzo Ribas</a>
+          <button
+            class="navbar-toggler navbarBtn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-color fs-5"
+                  aria-current="page"
+                  href="#projects"
+                  >Projetos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-color fs-5" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-color fs-5" href="#contact">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-color fs-5 darkModeBtn"
+                  onclick="changeColor()"
+                  cursor="pointer"
+                  ><i id="colorBtn" class="fa-solid fa-circle-half-stroke"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="container-fluid title-container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="text-container ms-md-5">
-                        <p class="fs-2 mb-0">Olá, eu sou o <strong>Lorenzo Ribas </strong>
-                            <a href="https://www.linkedin.com/in/lorenzo-ribas-55295a2aa/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/LorenzoRibas"><i class="fa-brands fa-github"></i></a>
-                        </p>
-                        <p class="text fs-4 d-inline-block">Desenvolvedor Front-End</p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="img-container">
-                        <img src="img/IMG_3939.jpg" class="lorenzo-img img-fluid" alt="Imagem do Lorenzo">
-                    </div>
-                </div>
+      <div class="container-fluid title-container">
+        <div class="row align-items-center text-color">
+          <div class="col-md-6">
+            <div class="text-container ms-md-5">
+              <p class="fs-2 mb-0">
+                Olá, eu sou o <strong>Lorenzo Ribas </strong>
+                <a href="https://www.linkedin.com/in/lorenzo-ribas-55295a2aa/">
+                  <i class="fa-brands fa-linkedin text-color"></i>
+                </a>
+                <a href="https://github.com/LorenzoRibas"
+                  ><i class="fa-brands fa-github text-color"></i
+                ></a>
+              </p>
+              <p class="text fs-4 d-inline-block">Desenvolvedor Front-End</p>
             </div>
-        </div>
-
-        <div id="projects" class="container-fluid text-center mt-5">
-            <h5 class="title fs-2">Projetos</h5>
-        </div>
-
-        <div class="container-fluid projects-container mt-5">
-            <div class="row">
-                <div class="col-12 col-md-4 border p-3 project text-center mb-3">
-                    <img src="img/blank.jpg" class="img-fluid mb-2" alt="Simulação imagem">
-                    <h5 class="title">Projeto 1</h5>
-                    <p>Nenhum projeto no momento</p>
-                </div>
-                <div class="col-12 col-md-4 border p-3 project text-center mb-3">
-                    <img src="img/blank.jpg" class="img-fluid mb-2" alt="Simulação imagem">
-                    <h5 class="title">Projeto 2</h5>
-                    <p>Nenhum projeto no momento</p>
-                </div>
-                <div class="col-12 col-md-4 border p-3 project text-center mb-3">
-                    <img src="img/blank.jpg" class="img-fluid mb-2" alt="Simulação imagem">
-                    <h5 class="title">Projeto 3</h5>
-                    <p>Nenhum projeto no momento</p>
-                </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="img-container">
+              <img
+                src="img/IMG_3939.jpg"
+                class="lorenzo-img img-fluid"
+                alt="Imagem do Lorenzo"
+              />
             </div>
+          </div>
         </div>
+      </div>
 
-        <div id="about" class="container-fluid about-container d-block mt-5">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-4 text-center text-md-start mb-3">
-                    <img src="img/IMG_3935.jpg" class="rounded img-fluid" alt="">
-                </div>
-                <div class="col-12 col-md-8">
-                    <h5 class="fs-2 text-center mb-5">Sobre Mim</h5>
-                    <p class="about-text fs-5 my-3">Nome: Lorenzo Rio Branco Ribas</p>
-                    <p class="about-text fs-5 my-3">Idade: 18</p>
-                    <p class="about-text fs-5 my-3">Localização: Porto Alegre, Rio Grande do Sul</p>
-                    <p class="about-text fs-5 my-3">Objetivos: Aplicar minhas habilidades em desenvolvimento de software para criar soluções inovadoras e eficientes.</p>
-                    <p class="about-text fs-5 my-3">Tecnologias: HTML, CSS, JS e Bootstrap</p>
-                </div>
-            </div>
-        </div>
+      <div id="projects" class="container-fluid text-center mt-5 text-color">
+        <h5 class="title fs-2">Projetos</h5>
+      </div>
 
-        <div class="container-fluid contact-container" id="contact">
-            <div id="contactAlert"></div>
-            <div class="row mt-sm-3 mt-md-5">
-                <div class="col-1 blank-col"></div>
-                <div class="col-md-4 border border-black rounded form-container py-3">
-                    <h5>Entre em contato</h5>
-                    <div class="mt-2">
-                        <label for="inputName" class="form-label">Nome</label>
-                        <input type="text" class="form-control border-black" id="inputName" required placeholder="Insira seu nome">
-                    </div>
-                    <div class="mt-1">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control border-black" id="inputEmail" required placeholder="Insira seu email">
-                    </div>
-                    <div class="mt-1">
-                        <label for="inputNumber" class="form-label">Telefone</label>
-                        <input type="number" inputmode="numeric" class="form-control border-black" id="inputNumber" required placeholder="Insira seu telefone">
-                    </div>
-                    <div class="mt-1 mb-3">
-                        <label for="inputMessage" class="form-label">Mensagem</label>
-                        <textarea id="inputMessage" class="form-control border-black" required placeholder="Insira uma mensagem"></textarea>
-                    </div>
-                    <button onclick="showAlert()" class="btn btn-dark col-4 ms-1 reset" type="button">Enviar</button>
-                </div>
-                <div class="col-0 col-md-3 blank-col"></div>
-                <div class="col-md-3 border border-black rounded info-container mt-3 mt-md-0 ms-md-4 h-50 py-3">
-                    <h5>Informações de Contato</h5>
-                    <p class="mt-3 mb-2"><i class="fa-solid fa-phone"></i> +5551986390834</p>
-                    <p class="mb-2"><i class="fa-solid fa-envelope me-1"></i> lorenzoribas47@gmail.com</p>
-                    <i class="fa-brands fa-square-whatsapp"></i><a target="_blank" href="https://wa.me/+5551986390834" class="ms-2 text-dark text-decoration-underline">WhatsApp</a>
-                </div>
-            </div>
+      <div class="container-fluid projects-container mt-5 text-color">
+        <div class="row">
+          <div class="col-12 col-md-4 border p-3 project text-center mb-3">
+            <img
+              src="img/blank.jpg"
+              class="img-fluid mb-2"
+              alt="Simulação imagem"
+            />
+            <h5 class="title">Projeto 1</h5>
+            <p>Nenhum projeto no momento</p>
+          </div>
+          <div class="col-12 col-md-4 border p-3 project text-center mb-3">
+            <img
+              src="img/blank.jpg"
+              class="img-fluid mb-2"
+              alt="Simulação imagem"
+            />
+            <h5 class="title">Projeto 2</h5>
+            <p>Nenhum projeto no momento</p>
+          </div>
+          <div class="col-12 col-md-4 border p-3 project text-center mb-3">
+            <img
+              src="img/blank.jpg"
+              class="img-fluid mb-2"
+              alt="Simulação imagem"
+            />
+            <h5 class="title">Projeto 3</h5>
+            <p>Nenhum projeto no momento</p>
+          </div>
         </div>
-        
+      </div>
+
+      <div
+        id="about"
+        class="container-fluid about-container d-block mt-5 text-color"
+      >
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center text-md-start mb-3">
+            <img src="img/IMG_3935.jpg" class="rounded img-fluid" alt="" />
+          </div>
+          <div class="col-12 col-md-8">
+            <h5 class="fs-2 text-center mb-5">Sobre Mim</h5>
+            <p class="about-text fs-5 my-3">Nome: Lorenzo Rio Branco Ribas</p>
+            <p class="about-text fs-5 my-3">Idade: 18</p>
+            <p class="about-text fs-5 my-3">
+              Localização: Porto Alegre, Rio Grande do Sul
+            </p>
+            <p class="about-text fs-5 my-3">
+              Objetivos: Aplicar minhas habilidades em desenvolvimento de
+              software para criar soluções inovadoras e eficientes.
+            </p>
+            <p class="about-text fs-5 my-3">
+              Tecnologias: HTML, CSS, JS e Bootstrap
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid contact-container" id="contact">
+        <div id="contactAlert"></div>
+        <div class="row mt-sm-3 mt-md-5">
+          <div class="col-1 blank-col"></div>
+          <div
+            id="form-contain"
+            class="col-md-4 border border-black rounded form-container py-3 text-color"
+          >
+            <h5>Entre em contato</h5>
+            <div class="mt-2">
+              <label for="inputName" class="form-label">Nome</label>
+              <input
+                type="text"
+                class="form-control border-color text-color"
+                id="inputName"
+                required
+                placeholder="Insira seu nome"
+              />
+            </div>
+            <div class="mt-1">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control border-color text-color"
+                id="inputEmail"
+                required
+                placeholder="Insira seu email"
+              />
+            </div>
+            <div class="mt-1">
+              <label for="inputNumber" class="form-label">Telefone</label>
+              <input
+                type="number"
+                inputmode="numeric"
+                class="form-control border-color text-color"
+                id="inputNumber"
+                required
+                placeholder="Insira seu telefone"
+              />
+            </div>
+            <div class="mt-1 mb-3">
+              <label for="inputMessage" class="form-label">Mensagem</label>
+              <textarea
+                id="inputMessage"
+                class="form-control border-color text-color"
+                required
+                placeholder="Insira uma mensagem"
+              ></textarea>
+            </div>
+            <button
+              onclick="showAlert()"
+              class="btn btn-dark col-4 ms-1 reset"
+              type="button"
+            >
+              Enviar
+            </button>
+          </div>
+          <div class="col-0 col-md-3 blank-col"></div>
+          <div
+            id="info-contain"
+            class="col-md-3 border border-black rounded info-container mt-3 mt-md-0 ms-md-4 h-50 py-3 text-color"
+          >
+            <h5>Informações de Contato</h5>
+            <p class="mt-3 mb-2">
+              <i class="fa-solid fa-phone text-color"></i> +5551986390834
+            </p>
+            <p class="mb-2">
+              <i class="fa-solid fa-envelope me-1 text-color"></i>
+              lorenzoribas47@gmail.com
+            </p>
+            <i class="fa-brands fa-square-whatsapp text-color"></i
+            ><a
+              target="_blank"
+              href="https://wa.me/+5551986390834"
+              class="ms-2 text-color"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="mt-5">
-        <hr>
-        <div class="container-fluid">
-            <div class="row align-items-center fs-2">
-                <div class="col-12 col-md-4 text-center text-md-start">
-                    <a class="navbar-brand dark-text fs-4 py-3" href="#">Lorenzo Ribas</a>
-                </div>
-                <div class="col-12 col-md-8 text-center text-md-end">
-                    <a href="https://www.linkedin.com/in/lorenzo-ribas-55295a2aa/" target="_blank"><i class="fa-brands fa-linkedin mx-2"></i></a>
-                    <a href="https://github.com/LorenzoRibas" target="_blank"><i class="fa-brands fa-github mx-2"></i></a>
-                    <a href="https://wa.me/+5551986390834" target="_blank" class="text-dark text-decoration-underline"><i class="fa-brands fa-square-whatsapp mx-2"></i></a>
-                </div>
-            </div>
+      <hr />
+      <div class="container-fluid">
+        <div class="row align-items-center fs-2">
+          <div class="col-12 col-md-4 text-center text-md-start">
+            <a class="navbar-brand text-color fs-4 py-3" href="#"
+              >Lorenzo Ribas</a
+            >
+          </div>
+          <div class="col-12 col-md-8 text-center text-md-end">
+            <a
+              href="https://www.linkedin.com/in/lorenzo-ribas-55295a2aa/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin mx-2 text-color"></i
+            ></a>
+            <a href="https://github.com/LorenzoRibas" target="_blank"
+              ><i class="fa-brands fa-github mx-2 text-color"></i
+            ></a>
+            <a
+              href="https://wa.me/+5551986390834"
+              target="_blank"
+              class="text-dark"
+              ><i class="fa-brands fa-square-whatsapp mx-2 text-color"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
-    
-
-</body>
-
+  </body>
 </html>
