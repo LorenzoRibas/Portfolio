@@ -34,12 +34,42 @@ function changeColor() {
     .trim();
 
   if (currentBgColor === "#d3d3d3") {
-    // Light
+    // DarkMode
     root.style.setProperty("--primary-bg-color", "#0b1215");
     root.style.setProperty("--primary-text-color", "#faf9f6");
+    document.body.classList.add("dark-mode");
+
+    // Altera borda dos containers
+    let formContainer = document.getElementById("form-contain");
+    formContainer.classList.remove("border-black");
+    formContainer.classList.add("border-white");
+
+    let infoContainer = document.getElementById("info-contain");
+    infoContainer.classList.remove("border-black");
+    infoContainer.classList.add("border-white");
+
+    // Altera o botão
+    let darkModeBtn = document.getElementById("colorBtn");
+    darkModeBtn.classList.remove("text-dark");
+    darkModeBtn.classList.add("text-white");
   } else {
-    // Dark
+    // Lightmode
     root.style.setProperty("--primary-bg-color", "#d3d3d3");
     root.style.setProperty("--primary-text-color", "#212529");
+    document.body.classList.remove("dark-mode");
+
+    // Altera borda dos containers
+    let formContainer = document.getElementById("form-contain");
+    formContainer.classList.remove("border-white");
+    formContainer.classList.add("border-black");
+
+    let infoContainer = document.getElementById("info-contain");
+    infoContainer.classList.remove("border-white");
+    infoContainer.classList.add("border-black");
+
+    // Altera o botão
+    let darkModeBtn = document.getElementById("colorBtn");
+    darkModeBtn.classList.remove("text-white");
+    darkModeBtn.classList.add("text-dark");
   }
 }

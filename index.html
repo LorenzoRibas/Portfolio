@@ -29,7 +29,7 @@
         <div class="container-fluid">
           <a class="navbar-brand text-color fs-4" href="">Lorenzo Ribas</a>
           <button
-            class="navbar-toggler teste1"
+            class="navbar-toggler navbarBtn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarContent"
@@ -60,7 +60,7 @@
                   class="nav-link text-color fs-5 darkModeBtn"
                   onclick="changeColor()"
                   cursor="pointer"
-                  ><i class="fa-solid fa-circle-half-stroke"></i
+                  ><i id="colorBtn" class="fa-solid fa-circle-half-stroke"></i
                 ></a>
               </li>
             </ul>
@@ -165,9 +165,9 @@
         <div class="row mt-sm-3 mt-md-5">
           <div class="col-1 blank-col"></div>
           <div
+            id="form-contain"
             class="col-md-4 border border-black rounded form-container py-3 text-color"
           >
-            <!-- Border white pra darkmode-->
             <h5>Entre em contato</h5>
             <div class="mt-2">
               <label for="inputName" class="form-label">Nome</label>
@@ -178,7 +178,6 @@
                 required
                 placeholder="Insira seu nome"
               />
-              <!-- border white pra darkmode -->
             </div>
             <div class="mt-1">
               <label for="inputEmail" class="form-label">Email</label>
@@ -189,7 +188,6 @@
                 required
                 placeholder="Insira seu email"
               />
-              <!-- border white pra darkmode -->
             </div>
             <div class="mt-1">
               <label for="inputNumber" class="form-label">Telefone</label>
@@ -201,7 +199,6 @@
                 required
                 placeholder="Insira seu telefone"
               />
-              <!-- border white pra darkmode -->
             </div>
             <div class="mt-1 mb-3">
               <label for="inputMessage" class="form-label">Mensagem</label>
@@ -211,7 +208,6 @@
                 required
                 placeholder="Insira uma mensagem"
               ></textarea>
-              <!-- border white pra darkmode -->
             </div>
             <button
               onclick="showAlert()"
@@ -223,9 +219,9 @@
           </div>
           <div class="col-0 col-md-3 blank-col"></div>
           <div
+            id="info-contain"
             class="col-md-3 border border-black rounded info-container mt-3 mt-md-0 ms-md-4 h-50 py-3 text-color"
           >
-            <!-- border white pra dark mode-->
             <h5>Informações de Contato</h5>
             <p class="mt-3 mb-2">
               <i class="fa-solid fa-phone text-color"></i> +5551986390834

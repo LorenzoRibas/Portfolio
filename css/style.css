@@ -7,8 +7,6 @@
   --secondary-text-color: #faf9f6;
 }
 
-/* Separar as classes corretamente */
-
 body,
 header,
 .form-control {
@@ -19,21 +17,18 @@ header,
   color: var(--primary-text-color);
 }
 
-.border-color {
-  border-color: var(--primary-text-color);
-}
-
-#contact input::placeholder,
-#contact textarea::placeholder {
-  color: var(--primary-text-color);
-}
-
-.teste1 {
-  background-color: var(--secondary-text-color);
-} /* Não mexer na cor */
+/* Header */
 
 .darkModeBtn {
   cursor: pointer;
+}
+
+.navbarBtn {
+  background-color: var(--secondary-text-color);
+}
+
+body.dark-mode a:hover {
+  color: #c7c5bf;
 }
 
 /* Título */
@@ -121,6 +116,15 @@ input[type="number"]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: var(--primary-text-color);
+}
+
+.border-color {
+  border-color: var(--primary-text-color);
 }
 
 .footer .row {
